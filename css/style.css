@@ -1,0 +1,39 @@
+body{
+    margin: 0 0;
+}
+
+#backgroundImage{
+    background-image: url("../images/background.jpg");
+    width: 100%;
+    height: 100vh;
+    /*height: xvh;
+    /* height: xvh; */
+    position: relative;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+#backgroundImage::after{
+    content: '';
+    background-color: ghostwhite;
+    position: absulote;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.0;
+    z-index: -1;
+}
+
+#conteudo{
+    width: 50vh;
+    height: 50vh;
+   /* border: 1px solid #000; */
+    border-radius: 0px;
+    background-color: rgb(119,121,245);
+    background: linear-gradient(180deg, rgba(119,121,245,1) 0%, rgba(119,56,229,1) 100%);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75); 
+
+}
