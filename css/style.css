@@ -1,5 +1,25 @@
+@font-face{
+    font-family:"Poppins-Regular";
+    src: 
+        local("Poppins-Regular"),
+        url("../assets/fonts/poppins-regular/Poppins-Regular.ttf") format("truetype"),
+        url("../assets/font/poppins-regular/Poppins-Regular.woff") format("woff"),
+        url("../assets/font/poppins-regular/Poppins-Regular.woff2") format("woff2");
+
+}
+@font-face {
+        font-family:"Roboto-Regular";
+        src: 
+            local("Roboto-Regular")
+            url("../assets/fonts/roboto-regular/Roboto-Regular.ttf") format("truetype"),
+            url("../assets/fonts/roboto-regular/Roboto-Regular.woff") format("woff"),
+            url("../assets/fonts/roboto-regular/Roboto-Regular.woff2") format("woff2");
+}
+
+
 body{
     margin: 0 0;
+    font-family: "Roboto-Regular";
 }
 
 #backgroundImage{
@@ -33,7 +53,108 @@ body{
    /* border: 1px solid #000; */
     border-radius: 0px;
     background-color: rgb(119,121,245);
-    background: linear-gradient(180deg, rgba(119,121,245,1) 0%, rgba(119,56,229,1) 100%);
+    background: linear-gradient(180deg, rgba(119,120,245,1) 0%, rgba(170,56,225,1) 100%);
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75); 
+}
+#conteudo p{
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
 
 }
+.imageUsuario{
+    font-size: 6vh; 
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8vh auto auto auto;
+    background-color: #FFF;
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75); 
+    
+}
+input[type="text"], input[type="password"]{
+        font-family: "Poppins-Regular";
+        color: #000000;
+        font-size: 16px;
+        disply: block;
+        width: 75%;
+        border-radius: 6px;
+        background: transparent;
+        margin: 2vh auto;
+        border: 1px solid #FFF;
+        text-align: center;
+        height: 45px;
+}
+
+input[type="text"], input[type="password"]:hover{
+        font-family: "Poppins-Reggular";
+        color: #000000;
+        font-size: 16px;
+        display: block;
+        width: 75%;
+        border-radius: 6px;
+        background: transparent;
+        margin: 2vh auto;
+        border: 1px solid #FFF;
+        text-align: center; 
+}
+
+input[type="text"]:hover, input[type="password"]:hover{
+    background-color:  ghostwhite;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder{
+        color: #FFF;
+        opacity: 0.8;
+}
+input[type="text"]:hover::placeholder, input[type="password"]:hover::placeholder{
+        color: #000;
+}
+.grupoBotoes{
+    margin: 6vh 4vh 0 4vh;
+}
+
+.botaoPadrao{
+        font-family: "Roboto-Regular";
+        color: #000;
+        border-color: #FFF;
+        text-align: center;
+        width: 20vh;
+        border-radius: 6px;
+        border: 1px solid transparent;
+       /* padding: 10px; */
+       padding: 0.375rem 0.75rem;
+}
+
+.botaoPadrao.hover{
+        background-color:  ghostwhite;
+        border-color: #B3B383;
+        opacity: 0.8;
+
+}
+
+.botaoLimpar{
+        background-color: #c291E8;
+        border-color: #c291E8;
+        color: #FFF;
+
+}
+.botaoLimpar:hover{
+        background-color: #422A31;
+        border-color: #422A91;
+}
+.botaoEntar{
+        background-color: #4251E8;
+        border-color: #4351E8;
+        color:#FFF;
+}
+
+.botaoEntar:hover{
+    background-color: #212873;
+    border-color: #212873;
+}
+
